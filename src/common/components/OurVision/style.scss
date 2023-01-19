@@ -1,0 +1,30 @@
+@import "../../../assets/scss/index.scss";
+
+.OurVisionComponent {
+    .ourVision {
+        &__description {
+            &-title {
+                max-width: 600px;
+            }
+            margin-bottom: $m-4xl;
+        }
+
+        &__card {
+            margin-top: $m-4xl;
+            padding: $p-5xl $p-2xl;
+            position: relative;
+            background: #ffffff;
+            border-radius: 40px;
+            &-img {
+                position: absolute;
+                top: -30%;
+                max-width: 320px;
+            }
+            &-content {
+                margin-top: $m-xl;
+            }
+        }
+    }
+    .weGuideYou__img {
+    }
+}

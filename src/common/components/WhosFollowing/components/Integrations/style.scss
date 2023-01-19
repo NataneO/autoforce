@@ -1,0 +1,34 @@
+@import '../../../../../assets/scss/index.scss';
+
+.IntegrationsComponent {
+    .integrations {
+        &__description {
+            &-title {
+                max-width: 600px;
+            }
+            margin-bottom: $m-3xl;
+        }
+
+        &__card {
+            padding: $p-md $p-xl;
+            margin: $m-sm 0;
+            border-radius: 20px;
+            object-fit: contain;
+            height: 100%;
+            &-active{
+                background-color: $secondary-color;
+            }
+            
+            &-img {
+               max-width: 190px;
+            }
+            &-content {
+                margin-top: $m-xl;
+                color: #fff;
+                &-subtitle{
+                    height: 128px;
+                }
+            }
+        }
+    }
+}

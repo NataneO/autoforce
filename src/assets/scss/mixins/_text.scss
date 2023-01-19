@@ -1,0 +1,40 @@
+@import '../variables/variables';
+@import '../fonts/fonts';
+
+//mixin font-style
+@mixin bold($font-family) {
+    font-weight: $fw-bold;
+    font-family: $font-family;
+}
+@mixin regular($font-family) {
+    font-weight: $fw-regular;
+    font-family: $font-family;
+}
+@mixin light($font-family) {
+    font-weight: $fw-light;
+    font-family: $font-family;
+}
+@mixin thin($font-family) {
+    font-weight: $fw-thin;
+    font-family: $font-family;
+}
+
+
+
+//mixin style+size
+@mixin bold-size($font-family, $font-size) {
+    @include bold($font-family);
+    font-size: $font-size;
+}
+@mixin regular-size($font-family, $font-size) {
+    @include regular($font-family);
+    font-size: $font-size;
+}
+@mixin light-size($font-family, $font-size) {
+    @include light($font-family);
+    font-size: $font-size;
+}
+@mixin thin-size($font-family, $font-size) {
+    @include thin($font-family);
+    font-size: $font-size;
+}

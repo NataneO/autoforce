@@ -1,0 +1,90 @@
+@import "../../../assets/scss/index.scss";
+
+.AboutComponent {
+  .about {
+    &__description {
+  
+      &-title {
+        max-width: 460px;
+        &--highlight{
+          color: $secondary-color;
+        }
+      }
+      &-subtitle {
+        max-width: 790px;
+        &--highlight{
+          color: $secondary-color;
+        }
+      }
+
+      &-img{
+        img{
+        width: 4rem;
+        margin-left: -1.5rem;
+        margin-top: -1rem;
+        }
+      }
+    }
+
+    &__values {
+      background-color: $primary-color;
+      padding: $p-3xl 0;
+    }
+    .values {
+      &__section-title {
+        font-size: $fs-xl;
+        color: $senary-color;
+        margin: $m-2xl 0;;
+      }
+      &__list {
+        display: flex;
+        width: 100%;
+        &-item {
+          flex: 1;
+        }
+        &-img {
+          object-fit: contain;
+          padding: $p-xs;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            align-items: center;
+            width:40px;
+          }
+        }
+        &-text {
+          font-size: $fs-md;
+          text-align: center;
+          padding: $p-xs;
+          color: $senary-color;
+        }
+      }
+
+      &__description {
+        @include light-size("Roboto",$fs-lg);
+        color: $primary-color;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        &-bg {
+          background-color: $secondary-color;
+          border-radius:0 70px 70px 0;
+          width: 10%;
+          padding: $p-xl;
+        }
+
+        &-content {
+          border-radius:70px 0 0 70px ;
+          padding: $p-xl $p-3xl $p-xl $p-5xl;
+          background-color: $secondary-color;
+          width: 80%;
+          &--bold {
+            @include bold("Roboto");
+          }
+        }
+      }
+    }
+  }
+}

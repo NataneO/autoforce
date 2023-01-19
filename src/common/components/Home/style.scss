@@ -1,37 +1,50 @@
+@import "../../../assets/scss/index.scss";
+.home {
+   padding: $m-6xl 0;
 
-.HomeComponent{
- background-color:#c1c1c1;
+   &__content {
+      padding: $m-6xl 0;
+   }
 
-.home{
-    width: 100%;  
-    
-    .home__content{
-        height: 700px;
-        padding-top:7rem;
-           
-        .content__description{
-            padding-top:7rem;
-        }
-        .content__img{
-            object-fit: contain;
-            img{
-                width: 30rem;
-             
-            }
-        }
-    }
-
-    .home__cta{
-        button{
-            width: 100%;
-        }
-    }
-   
-}   
+   &__description {
+      width: 80%;
+   }
+   &__title {
+      font-size: $fs-2xl;
+      &-highlight {
+         @include bold("Roboto");
+         color: $tertiary-color;
+      }
+   }
+   &__subtitle {
+      font-size: $fs-lg;
+      &-highlight {
+         @include bold("Roboto");
+         color: $tertiary-color;
+      }
+   }
+   &__img {
+      object-fit: contain;
+      padding: $p-2xl 0 0 $p-xl;
+      img {
+         width: 75%;
+      }
+   }
+   &__cta {
+      width: 100%;
+      text-align: center;
+   }
+   &__cta-btn {
+      @include regular-size("Roboto", $fs-md);
+      border-radius: 2rem;
+      background-color: $tertiary-color;
+      color: $senary-color;
+      padding: $p-xl $p-3xl;
+      border: none;
+      white-space: nowrap;
+      cursor: pointer;
+      &:hover {
+         background-color: darken($tertiary-color, 10%);
+      }
+   }
 }
-
-
-
-
-
-

@@ -1,4 +1,5 @@
-//variables.scss
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 
 // colors
 $primary-color: #070707;
@@ -12,7 +13,6 @@ $senary-color: #FFFFFF;
 $ff-roboto: "Roboto", sans-serif;
 $ff-raleway: "Raleway", sans-serif;
 
-// font-sizes
 // Padding
 $p-xs: 0.25rem;
 $p-sm: 0.5rem;
@@ -56,13 +56,4 @@ $fw-regular: 400;
 $fw-bold: 700;
 
 
-// font mixins
-$roboto-thin: $fw-thin $ff-roboto;
-$roboto-light: $fw-light $ff-roboto;
-$roboto-regular: $fw-regular $ff-roboto;
-$roboto-bold: $fw-bold $ff-roboto;
 
-$raleway-thin: $fw-thin $ff-raleway;
-$raleway-light: $fw-light $ff-raleway;
-$raleway-regular: $fw-regular $ff-raleway;
-$raleway-bold: $fw-bold $ff-raleway;

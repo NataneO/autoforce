@@ -1,28 +1,27 @@
 import './style.scss'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Carousel from 'react-bootstrap/Carousel';
+
 
 function Certificates() {
-    return (
-        <div className="certificates">
-            <Carousel>
-        <Carousel.Item>
-          <img
-            src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png"
-            alt="Image One"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"
-            alt="Image Two"
-          />
-        </Carousel.Item>
-      </Carousel>
-       
-            </div>
-    );
+  return (
+    <div class="CertificatesComponent">
+      <div className="certificates">
+        <img src="../../../src/assets/img/certificates/img0.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img2.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img3.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img4.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img5.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img6.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img7.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img8.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img9.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img10.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img12.png" alt="" />
+        <img src="../../../src/assets/img/certificates/img13.png" alt="" />
+
+
+      </div>
+    </div>
+  );
 }
 
 export default Certificates;

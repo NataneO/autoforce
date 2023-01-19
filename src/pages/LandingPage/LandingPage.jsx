@@ -9,6 +9,7 @@ import Press from '../../common/components/Press/Press';
 import Footer from '../../common/components/footer/footer';
 import Testimonials from '../../common/components/Testimonials/Testimonials';
 import Contact from '../../common/components/Contact/Contact';
+import './style.scss'
 
 
 

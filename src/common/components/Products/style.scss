@@ -1,0 +1,32 @@
+@import '../../../assets/scss/index.scss';
+
+.ProductsComponent {
+    .products {
+        &__description {
+            &-title {
+                max-width: 600px;
+            }
+            
+            margin-bottom: $m-xl;
+        }
+
+        &__card {
+            padding: $p-xl $p-2xl;
+            background: #070707;
+            border-radius: 20px;
+            object-fit: contain;
+            height: 100%;
+            
+            &-img {
+               max-width: 190px;
+            }
+            &-content {
+                margin-top: $m-xl;
+                color: #fff;
+                &-subtitle{
+                    height: 128px;
+                }
+            }
+        }
+    }
+}

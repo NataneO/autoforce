@@ -1,0 +1,32 @@
+@import '../../../../../assets/scss/index.scss';
+
+.SupportersComponent {
+    background-color: $secondary-color;
+    margin: $m-2xl 0;
+    padding: $p-xl 0;
+
+    .programs, .supporters{
+        
+       &__content{
+        display: flex;
+        width: 100%;
+       
+        div{
+            flex: 1;
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            margin: 0 $m-xs ;
+        img {
+            flex: 1;
+            object-fit: contain;
+            height: 3rem;
+            filter: grayscale(100%);
+            
+        }
+        padding: $p-md 0;
+       }}
+
+       
+
+    }
+}
