@@ -1,33 +1,29 @@
 import './style.scss'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'; 
+import Col from 'react-bootstrap/Col';
+import GridWrapper from '../../grid/grid';
 
 export default function Contact() {
     return (
         <div className="ContactComponent">
-            <Container className="contact">
-                <h5></h5>
-                <Row className="justify-content-center"><h3></h3>
-                </Row>
-                <form>
-                    <Row><Col>
-                        <h3></h3>
-                        <img src="" alt="" />
-                    </Col>
-                        <Col>
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="text" />
-                        </Col>
-                    </Row>
-                    <Row><button></button></Row>
-                </form>
-            </Container>
+            <h6> CONTATO</h6>
+            <h4>Agende uma demonstração</h4>
+            <form>
+            <GridWrapper columns={2} rows={1}>
+                <div><h5> Impulsione o crescimento e a transformação difital do seu negócio com as nossas soluçoes</h5></div>
+                <div>
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+
+                </div>
+            </GridWrapper>
+            </form>
         </div>
     )
 }

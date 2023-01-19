@@ -1,62 +1,59 @@
 import './style.scss'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import GridWrapper from '../../grid/grid';
 
 export default function OurVision() {
-    return (
-        <div className="OurVisionComponent">
-            <Container className='ourVision'>
-                <Row>
-                    <Col>
-                        <h2>
-                            A AutoForce compreende que existem
-                            3 tipos de vendedores de veículos
-                        </h2>
-                    </Col>
-                </Row>
-                <Row>
-                    <section>
-                        <Col>
-                            <article>
-                                <img src="" alt="" />
-                                <h4></h4>
-                                <h6></h6>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </article>
-                        </Col>
-                        <Col>
-                            <article>
-                                <img src="" alt="" />
-                                <h4></h4>
-                                <h6></h6>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </article>
-                        </Col>
-                        <Col>
-                            <article>
-                                <img src="" alt="" />
-                                <h4></h4>
-                                <h6></h6>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </article>
-                        </Col>
-                    </section>
-                </Row>
-            </Container>
-        </div>
-    )
+
+  const vendorsArr = [
+    {
+      img: '',
+      title: 'Vendedor 1.0',
+      subtitle: 'Os vendedores recebem clientes/tiram pedidos e trabalham com técnicas de persuasão agressivas.',
+      listItems: [
+       'Grandes instalaçoes', 'Operaçoes engessadas', 'Foco no produto','Investem em publicidade tradicional']
+      
+    },
+    {
+      img: '',
+      title: 'Vendedor 2.0',
+      subtitle: 'Os vendedores recebem clientes/tiram pedidos e trabalham com técnicas de persuasão agressivas.',
+      listItems: [
+       'Grandes instalaçoes', 'Operaçoes engessadas', 'Foco no produto','Investem em publicidade tradicional']
+    },
+    {
+      img: '',
+      title: 'Vendedor 3.0',
+      subtitle: 'Os vendedores recebem clientes/tiram pedidos e trabalham com técnicas de persuasão agressivas.',
+      listItems: [
+       'Grandes instalaçoes', 'Operaçoes engessadas', 'Foco no produto','Investem em publicidade tradicional']
+    }
+  ]
+
+  return (
+    <div className="OurVisionComponent">
+      <h5>Visão</h5>
+      <h2>
+        A AutoForce compreende que existem
+        3 tipos de vendedores de veículos
+      </h2>
+
+      <GridWrapper columns={3} rows={1}>
+        {vendorsArr.map((vendor, index) =>
+          <div key={index}>
+            <img src={vendor.img} alt="" />
+            <h4>{vendor.title}</h4>
+            <h6>{vendor.subtitle}</h6>
+            <ul>
+              {vendor.listItems.map((item, index) =>
+                <li key={index}>{item}</li>
+              )}
+
+            </ul>
+          </div>
+
+        )}
+
+      </GridWrapper>
+      <img src="" alt="" />
+    </div>
+  )
 }

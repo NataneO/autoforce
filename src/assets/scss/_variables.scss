@@ -1,0 +1,41 @@
+//variables.scss
+
+// colors
+$primary-color: #070707;
+$secondary-color: #F6B419;
+$tertiary-color: #3754E2;
+$quaternary-color: #F5F5F5;
+$quinary-color: #D9D9D9;
+$senary-color: #FFFFFF;
+
+// font-sizes
+$font-size-xxs: 12px;
+$font-size-xs: 14px;
+$font-size-s: 16px;
+$font-size-m: 18px;
+$font-size-l: 20px;
+$font-size-xl: 24px;
+$font-size-xxl: 32px;
+$font-size-xxxl: 48px;
+
+// fonts
+$font-family-roboto: "Roboto", sans-serif;
+$font-family-raleway: "Raleway", sans-serif;
+
+// font-weight
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+
+// font mixins
+$roboto-thin: $font-weight-thin $font-family-roboto;
+$roboto-light: $font-weight-light $font-family-roboto;
+$roboto-regular: $font-weight-regular $font-family-roboto;
+$roboto-bold: $font-weight-bold $font-family-roboto;
+
+$raleway-thin: $font-weight-thin $font-family-raleway;
+$raleway-light: $font-weight-light $font-family-raleway;
+$raleway-regular: $font-weight-regular $font-family-raleway;
+$raleway-bold: $font-weight-bold $font-family-raleway;

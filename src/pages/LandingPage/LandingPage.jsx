@@ -23,8 +23,8 @@ export default function LandingPage() {
         <Products/>
         <WhosFollowing/>
         <Press/>
-        <Contact/>
         <Testimonials/>
+        <Contact/>
         <Footer/>
         </>
     )
