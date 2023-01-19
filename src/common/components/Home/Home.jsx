@@ -7,7 +7,7 @@ import Certificates from './components/Certificates/Certificates';
 function Home() {
     return (
         <div className="HomeComponent">
-            <GridWrapper columns={2} rows={1}>
+            <GridWrapper columns={2} columnSizes={[6,6]} rows={1}>
                 <div className="content__description">
                     <h1 className="home__title">Promovemos transformação
                         digital no mercado automotivo

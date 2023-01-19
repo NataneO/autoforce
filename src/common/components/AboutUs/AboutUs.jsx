@@ -8,7 +8,7 @@ export default function AboutUs() {
             <h5>Sobre nós</h5>
             <h1>Titulo</h1>
                 <h4>Subtitulo</h4>
-            <GridWrapper columns={2} rows={1}>
+            <GridWrapper columns={2} columnSizes={[4,8]}rows={1}>
                 
                 <h2>Titulo 2</h2>
                 <div>

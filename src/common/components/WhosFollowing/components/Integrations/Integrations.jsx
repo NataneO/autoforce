@@ -30,8 +30,8 @@ export default function Integrations() {
     return (
         <div className="IntegrationsComponent">
             <h4>Nossas integrações</h4>
-            <GridWrapper columns={2} rows={1}>
-            <GridWrapper columns={1} rows={segments.length}>
+            <GridWrapper columns={2} rows={1} columnSizes={[3,9]}>
+            <div>
                 {segments.map((segment, index) =>
                     <div key={index}>
                         <span>{segment.name}</span>
@@ -39,7 +39,7 @@ export default function Integrations() {
                 )}
 
 
-            </GridWrapper>
+</div>
             <GridWrapper columns={3} rows={5}>
             {integrations.map((integration, index) =>
                     <div key={index}>

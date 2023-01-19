@@ -35,7 +35,7 @@ export default function Products() {
             <h5>Produtos</h5>
             <h4>Nossas soluções</h4>
             <h5>Te fornecemos a melhor forma de acelerar seu negócio.</h5>
-            <GridWrapper columns={3} rows={1}>
+            <GridWrapper columns={4} rows={1}>
                 {productsArr.map((product, index) =>
                     <div key={index}>
                         <div>

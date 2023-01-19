@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div className="FooterComponent">
             <div>
-                <GridWrapper columns={3} rows={1}>
+                <GridWrapper columns={3} rows={1} columnSizes={[3,6,3]}>
                 <div>
                     <img src="" alt="" />
                 </div>
@@ -31,6 +31,7 @@ export default function Footer() {
                     <h5></h5>
                 </div>
                 </GridWrapper>
+
                 <GridWrapper columns={2} rows={1}>
                     <h6></h6>
                     <h6></h6>
